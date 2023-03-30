@@ -1,0 +1,17 @@
+public class MyClass {
+    import javax.swing.JOptionPane;
+    public static void main(String args[]) {
+        livros u1;
+        u1 = new livros;
+        
+        u1.setTitulo(JOptionPane.showInputDialog("Digite o titulo:"));
+        u1.setAutor(JOptionPane.showInputDialog("Digite o autor:"));
+        u1.setEditora(JOptionPane.showInputDialog("Digite o editora:"));
+        u1.setCodigo(JOptionPane.showInputDialog("Digite o codigo:"));
+        
+        JOptionPane.showMessageDialog(null, "TITULO: " + u1.getTitulo() + 
+        "\nAUTOR(A): " + u1.getAutor() + 
+        "\nEDITORA: " + u1.getEditora() +
+        "\nCÓDIGO: " + u1.getCodigo)
+    }
+}
